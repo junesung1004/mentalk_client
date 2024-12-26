@@ -12,15 +12,15 @@ export default async function Favorite() {
   const router = useRouter();
 
   const [favoriteList, setFavoriteList] = useState<Mentor[] | null>();
-  const favoriteMentorData = useMyFavorite();
+  // const favoriteMentorData = useMyFavorite();
 
   const { user } = useUserContext();
 
-  useEffect(() => {
-    if (favoriteMentorData) {
-      setFavoriteList(favoriteMentorData);
-    }
-  }, []);
+  // useEffect(() => {
+  //     if(favoriteMentorData) {
+  //         setFavoriteList(favoriteMentorData);
+  //     }
+  // }, [])
 
   // 쿠키에서 불러온 값이 멘토라면 튕겨냄
   if (user?.type === "Mentor") {
