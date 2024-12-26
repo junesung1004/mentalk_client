@@ -1,0 +1,144 @@
+.wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    height: 100%;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .profileImg {
+        width: 150px;
+        height: 150px;
+        background-color: lightgray;
+        border: 1px solid white;
+        border-radius: 999px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            opacity: 0;
+            border: 1px solid white;
+            border-radius: 999px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:hover p {
+            opacity: .5;
+        }
+
+
+    }
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .itemContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        width: 400px;
+    }
+
+    .item {
+        display: flex;
+        padding: 10px;
+        gap: 5px;
+        border: lightgray 1px solid;
+        border-radius: 999px;
+        align-items: center;
+
+
+        strong {
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input {
+            font-size: 12pt;
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .item.readonly {
+        background-color: #f3f3f3;
+        color: gray;
+    }
+}
+
+.positionContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 400px;
+    padding: 10px;
+
+
+    .item {
+        display: flex;
+        padding: 10px 20px;
+        gap: 5px;
+        border: lightgray 1px solid;
+        border-radius: 999px;
+        align-items: center;
+    }
+
+
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+
+    button {
+        font-size: 12pt;
+        border: none;
+        border-radius: 15px;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+
+    .editBtn {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .cancelBtn {
+        background-color: lightgray;
+        color: black;
+    }
+
+
+
+}
